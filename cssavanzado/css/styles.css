@@ -1,0 +1,29 @@
+/* html{
+    color: peru;
+}
+span{
+    color: blue;
+    font-size: 5px;
+}
+p span{
+    color: red;
+    font-size: 95px;
+}
+div.destacado > p{
+    color:green;
+}
+div ~ h2{
+    color:indigo;
+} */
+
+p {
+    color: blue;  }
+  #unico {
+    color:red;    }
+  .destacada {
+    color:green;   }
+  p.destacada {
+    color:orange;   }
+  p#unico{
+    color:pink;   }
+ 
