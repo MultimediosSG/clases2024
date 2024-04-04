@@ -1,0 +1,42 @@
+div {
+    font-size: 2rem;
+}
+
+/* link */
+a:link {
+    color: #FF0000;
+}
+
+/* link visitado */
+a:visited {
+    color: #00FF00;
+}
+
+/* mouse sobre link */
+a:hover {
+    color: #FF00FF;
+}
+
+/* link seleccionado */
+a:active {
+    color: #0000FF;
+}
+
+/* 
+p::first-letter {
+    color: #ff0000;
+    font-size: 40px;
+}
+
+p::first-line {
+    color: #0000ff;
+    font-variant: small-caps;
+} */
+
+p{
+    color: blue;
+}
+
+ul.lista li:first-child {
+    color: lime;
+}
