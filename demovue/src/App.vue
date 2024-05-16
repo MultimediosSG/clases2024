@@ -6,7 +6,7 @@ import Tasks from '@/components/Tasks.vue'
 <template>
   <div>
     <Tasks>
-    Lista de tareas
+    Lista de tareas 
     </Tasks>
     
     mi app
