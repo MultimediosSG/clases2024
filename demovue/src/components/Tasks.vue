@@ -2,27 +2,28 @@
 import Button from '@/components/Button.vue'
 import Task from '@/components/Task.vue'
 import Icono from '@/components/Icono.vue'
+import { ref } from 'vue';
 
-const tasks = [{
-    id: 1,
-    title: 'Task One',
-    completed: false
-}, {
-    id: 2,
-    title: 'Task Two',
-    completed: true
-}, {
-    id: 3,
-    title: 'Task Three',
-    completed: true
-}];
+defineProps({
+    tasks: {
+        type: Array,
+        required: true
+    }
+});
 
+const completeTask = (task) => {
+  task.completed = !task.completed;
+}
 </script>
 <template>
-    <h1><slot /> <Icono /></h1>
-    <ul>
-        <Task v-for="task in tasks" :key="task.id" :task="task"></Task>
-    </ul>
-    
-    
+    <div class="p-5 border">
+        <h1 class="text-2xl mb-4">
+            <slot />
+        </h1>
+        <ul class="space-y-2">
+            <Task v-for="task in tasks" :key="task.id" :task="task" @completed="completeTask"></Task>
+        </ul>
+    </div>
+
+
 </template>
